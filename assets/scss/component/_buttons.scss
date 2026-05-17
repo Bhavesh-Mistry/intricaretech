@@ -1,0 +1,73 @@
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.4px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 23px;
+  background-color: $clr-bg-light-gray;
+  color: $clr-text-secondary;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+
+  &:focus,
+  &:focus-visible {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background: $clr-primary-gradient;
+    color: $white;
+
+    &:hover {
+      background: $clr-primary-gradient-hover;
+    }
+  }
+
+  &.btn-blue {
+    background-color: $clr-bg-primary;
+    color: $white;
+
+    &:hover {
+      background-color: $clr-bg-primary-hover;
+    }
+  }
+
+  &.btn-light-blue {
+    background-color: $clr-bg-light-blue;
+    color: $white;
+
+    &:hover {
+      background-color: $clr-border;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $clr-bg-light-blue;
+    color: $clr-text-dark-gray;
+
+    &:hover {
+      background-color: $clr-border;
+    }
+  }
+
+}
+
+button {
+  outline: 0;
+  box-shadow: none;
+
+  &:focus,
+  &:active {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+  }
+}

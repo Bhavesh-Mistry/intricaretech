@@ -1,0 +1,45 @@
+nav {
+   .breadcrumb {
+      margin: 0;
+
+      .breadcrumb-item {
+         // font-family: "Montserrat", sans-serif;
+         font-family: "Inter", sans-serif;
+         font-size: 14px;
+         line-height: 22px;
+         font-weight: 400;
+         letter-spacing: 0px;
+         text-transform: capitalize;
+         color: $clr-bg-primary;
+         position: relative;
+         padding-left: 8px;
+         display: flex;
+         align-items: center;
+
+         &.active {
+            color: $clr-text-theme-body;
+         }
+
+         &:before {
+            content: url(../images/icon-right.svg);
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            padding: 0;
+            margin-right: 8px;
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%);
+         }
+
+         &:first-child {
+            padding: 0;
+            margin-top: -3px;
+
+            &:before {
+               display: none;
+            }
+         }
+      }
+   }
+}

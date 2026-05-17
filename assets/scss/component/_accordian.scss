@@ -1,0 +1,69 @@
+.accordion {
+   padding: 24px 70px 30px 26px;
+   position: relative;
+
+   @media(max-width:1199px) {
+      padding: 24px 40px 30px 26px;
+   }
+
+   @media(max-width:991px) {
+      padding: 24px 26px 30px 26px;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 8px;
+      width: 3px;
+      height: 85%;
+      background-color: $clr-border-two;
+   }
+
+   .accordion-item {
+      position: relative;
+      background-color: transparent;
+      border: 0;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 18px;
+         left: -23.5px;
+         width: 14px;
+         height: 14px;
+         background: url(../images/icon-circle.svg) no-repeat center center;
+         background-size: contain;
+      }
+
+      .accordion-header {
+         .accordion-button {
+            border: 1px solid;
+            border-image-source: linear-gradient(99.37deg, #E7EDF6 30.16%, #F0F3F7 116.3%);
+            border-image-slice: 1;
+            background-color: transparent;
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            border-radius: 5px;
+            box-shadow: none;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.36;
+            color: $clr-text-primary;
+            padding: 15px 20px 15px 10px;
+
+            &:after {
+               width: 22px;
+               background-image: url(../images/icon-down-big.svg);
+            }
+         }
+      }
+
+      .accordion-collapse {
+         .accordion-body {
+            padding: 14px 10px;
+         }
+      }
+   }
+}
